@@ -1,0 +1,232 @@
+:root{--ref-ink:#102a50;--ref-blue:#28639c;--ref-gold:#d4ad62;--ref-line:#c6d8ed;--ref-glass:rgba(255,255,255,.66)}
+.campaign-suite{max-width:1440px;margin:0 auto;padding:0 24px 64px}
+.creative-board{position:relative;isolation:isolate;overflow:hidden;width:100%;min-height:760px;aspect-ratio:4/3;margin:24px auto 38px;border:1px solid rgba(161,190,224,.62);background:#eaf2fc url("campaign-ai-iceblue.png") center/cover no-repeat;box-shadow:0 22px 65px rgba(29,64,108,.11);color:var(--ref-ink)}
+.creative-board:before{content:"";position:absolute;z-index:-1;inset:17px;border:1px solid rgba(255,255,255,.8);pointer-events:none}
+.cb-brand{position:absolute;z-index:3;left:4.5%;top:4%;color:var(--ref-ink);font:italic 600 26px/1 Georgia,"Noto Serif SC",serif;letter-spacing:-.04em}
+.cb-brand small{display:block;margin-top:6px;font:500 8px/1.2 Arial,sans-serif;letter-spacing:.28em}
+.cb-kicker{display:flex;align-items:center;justify-content:center;gap:16px;color:#304d75;font:500 12px/1.4 Georgia,serif;letter-spacing:.34em;text-transform:uppercase}
+.cb-kicker:before,.cb-kicker:after{content:"";width:62px;height:1px;background:linear-gradient(90deg,transparent,#91a8c6)}
+.cb-kicker:after{background:linear-gradient(90deg,#91a8c6,transparent)}
+.cb-hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:3%;height:100%;padding:9% 6% 8%}
+.cb-copy{grid-column:2;grid-row:1;position:relative;z-index:2;text-align:center}
+.cb-copy h1{max-width:14ch;margin:28px auto 14px;color:var(--ref-ink);font:500 clamp(42px,5vw,72px)/1.22 "Noto Serif SC","Songti SC",serif;letter-spacing:-.045em}
+.cb-copy>p{max-width:33em;margin:0 auto;color:#203d65;font:400 clamp(16px,1.55vw,23px)/1.8 "Noto Serif SC","Songti SC",serif;letter-spacing:.04em}
+.cb-spec{display:inline-flex;margin-top:24px;padding:10px 24px;border:1px solid var(--ref-gold);border-radius:999px;background:rgba(255,255,255,.7);box-shadow:0 4px 18px rgba(209,174,99,.12);color:#19375f;font:italic 500 17px/1.35 Georgia,"Noto Serif SC",serif}
+.cb-quick{display:grid;grid-template-columns:1fr 1fr;max-width:620px;margin:28px auto 0;border-top:1px solid rgba(119,150,188,.28)}
+.cb-quick span{position:relative;padding:15px 8px 15px 30px;border-bottom:1px solid rgba(119,150,188,.28);color:#162f53;text-align:left;font:500 clamp(13px,1.3vw,18px)/1.45 "Noto Serif SC","Songti SC",serif}
+.cb-quick span:before{content:"✓";position:absolute;left:3px;top:50%;transform:translateY(-50%);width:20px;height:20px;display:grid;place-items:center;border:1.5px solid var(--ref-gold);border-radius:50%;color:#b68b3e;font:500 12px/1 Georgia,serif}
+.cb-product{grid-column:1;grid-row:1;position:relative;display:grid;place-items:center;min-height:500px}
+.cb-product:before{content:"";position:absolute;width:min(90%,500px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 46%,rgba(255,255,255,.88),rgba(220,237,253,.56) 62%,transparent 72%)}
+.cb-product img{position:relative;z-index:1;width:min(78%,430px);height:500px;object-fit:contain;mix-blend-mode:multiply;filter:drop-shadow(12px 20px 22px rgba(24,51,87,.2))}
+.cb-placeholder{position:relative;z-index:1;width:240px;height:380px;display:grid;place-content:center;text-align:center;border:1px solid rgba(255,255,255,.96);border-radius:18px;background:linear-gradient(145deg,rgba(255,255,255,.8),rgba(207,226,248,.64));box-shadow:0 18px 40px rgba(34,69,113,.13);color:#304f76}
+.cb-placeholder b{font:italic 600 25px Georgia,serif}.cb-placeholder span{margin-top:12px;font-size:13px;line-height:1.8}
+.cb-foot{position:absolute;z-index:2;left:6%;right:6%;bottom:3%;text-align:center;color:#536e90;font:400 10px/1.5 "Noto Serif SC","Songti SC",serif;letter-spacing:.11em}
+.cb-panel{height:100%;display:flex;flex-direction:column;padding:8% 5.5% 6%}
+.cb-heading{max-width:900px;margin:0 auto 34px;text-align:center}
+.cb-heading h2{margin:18px 0 8px;color:var(--ref-ink);font:500 clamp(40px,4.6vw,66px)/1.22 "Noto Serif SC","Songti SC",serif;letter-spacing:.08em}
+.cb-heading p{margin:0;color:#253f66;font:400 clamp(15px,1.55vw,22px)/1.75 "Noto Serif SC","Songti SC",serif;letter-spacing:.04em}
+.cb-gold-rule{width:205px;height:3px;margin:18px auto;background:linear-gradient(90deg,transparent,#e2bd75,transparent);border-radius:50%}
+.cb-benefits{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin:auto 0}
+.cb-card{min-height:340px;display:flex;flex-direction:column;align-items:center;padding:22px 18px 25px;border:1px solid rgba(255,255,255,.98);border-radius:27px;background:linear-gradient(155deg,rgba(255,255,255,.88),rgba(221,237,252,.74));box-shadow:0 14px 34px rgba(39,75,122,.11);text-align:center}
+.cb-illustration{width:100%;height:158px;display:grid;place-items:center;margin:0 auto 8px}
+.cb-illustration svg{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 8px 10px rgba(55,103,157,.13))}
+.cb-card h3{margin:7px 0 10px;color:#142d50;font:500 clamp(18px,1.7vw,24px)/1.35 "Noto Serif SC","Songti SC",serif}
+.cb-card p{max-width:22em;margin:0;color:#253f64;font:400 clamp(12px,1.08vw,15px)/1.75 "Noto Serif SC","Songti SC",serif}
+.cb-proof{display:flex;align-items:center;justify-content:center;padding:8% 5.5%}
+.cb-proof>.cb-proof-grid,.cb-proof>.cb-panel{width:100%}
+.cb-proof-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;width:100%;margin:auto}
+.cb-proof-card{min-height:320px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:22px 14px;border:1px solid rgba(255,255,255,.98);border-radius:26px;background:linear-gradient(155deg,rgba(255,255,255,.9),rgba(222,238,252,.73));box-shadow:0 14px 36px rgba(39,75,122,.1);text-align:center}
+.cb-proof-card .cb-illustration{height:120px;margin:0 0 8px}
+.cb-proof-card b{color:#17365e;font:500 18px/1.5 "Noto Serif SC","Songti SC",serif}
+.cb-proof-card strong{display:block;margin:10px 0 6px;color:#112f58;font:italic 500 clamp(36px,4vw,60px)/1 Georgia,serif;letter-spacing:-.05em}
+.cb-proof-card span{color:#4f6888;font:400 12px/1.7 "Noto Serif SC","Songti SC",serif}
+.cb-scene-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;width:100%;margin:auto}
+.cb-scene-card{min-height:300px;padding:20px 18px;border:1px solid rgba(255,255,255,.98);border-radius:25px;background:linear-gradient(155deg,rgba(255,255,255,.88),rgba(221,237,252,.72));box-shadow:0 14px 34px rgba(39,75,122,.1);text-align:center}
+.cb-scene-card .cb-illustration{height:145px;margin:0 auto 12px}
+.cb-scene-card b{display:block;margin:0 0 9px;color:#18355b;font:500 18px/1.45 "Noto Serif SC","Songti SC",serif}
+.cb-scene-card p{margin:0;color:#516a88;font:400 13px/1.75 "Noto Serif SC","Songti SC",serif}
+.cb-ingredients{display:grid;grid-template-columns:1fr 1fr;gap:20px;flex:1}
+.cb-ingredient-box,.cb-routine-box{min-height:350px;padding:28px 30px;border:1px solid rgba(255,255,255,.98);border-radius:25px;background:linear-gradient(145deg,rgba(255,255,255,.87),rgba(220,236,251,.73));box-shadow:0 14px 35px rgba(39,75,122,.09)}
+.cb-ingredient-box h3,.cb-routine-box h3{display:inline-flex;align-items:center;margin:-4px 0 17px;padding:10px 21px;border:0;border-bottom:3px solid #e3c276;border-radius:10px 10px 0 0;background:linear-gradient(105deg,#164d88,#317db9);color:#fff;font:500 20px/1.4 "Noto Serif SC","Songti SC",serif;box-shadow:0 8px 18px rgba(29,75,125,.16)}
+.cb-ingredient-list{display:grid;gap:0}
+.cb-ingredient{display:flex;align-items:center;gap:15px;min-height:70px;padding:12px 10px;border-bottom:1px solid rgba(142,172,207,.35);color:#18365c;font:500 17px/1.5 "Noto Serif SC","Songti SC",serif}
+.cb-ingredient i{width:48px;height:48px;flex:0 0 48px;display:grid;place-items:center;overflow:hidden;border:1px solid rgba(255,255,255,.98);border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#c4e0fa 65%,#9ec5ec);box-shadow:inset 0 0 8px #fff,0 7px 15px rgba(50,100,157,.12)}
+.cb-ingredient i svg{width:30px;height:30px;display:block}
+.cb-routine-box p{margin:0 0 16px;color:#344f73;font:400 14px/1.8 "Noto Serif SC","Songti SC",serif}
+.cb-routine{display:grid;gap:10px;margin-top:18px}
+.cb-routine span{padding:12px 16px;border:1px solid rgba(216,183,111,.72);border-radius:999px;background:rgba(255,255,255,.74);color:#18395f;font:500 14px/1.5 "Noto Serif SC","Songti SC",serif}
+.cb-board-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;padding:8px 0 28px}
+.cb-board-nav a,.poster-detail-link a{padding:12px 25px;border:1px solid var(--ref-gold);border-radius:999px;background:linear-gradient(135deg,#fff,#eef5fc);color:#18385e;text-decoration:none;font:500 15px/1.4 "Noto Serif SC","Songti SC",serif;box-shadow:0 9px 24px rgba(35,74,121,.1)}
+.ad-product{display:block;min-height:0;margin:0 0 64px;overflow:visible;border:0;border-radius:0;background:transparent;box-shadow:none}
+.ad-product:nth-child(even) .ad-product-visual{order:initial}
+.ad-product-visual.product-artwork-gallery{width:100%;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:25px;min-height:0;padding:0;background:transparent}
+.ad-product-copy{display:none}
+.product-artwork-gallery>img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;mix-blend-mode:normal;filter:none}
+.product-artwork-gallery .creative-board{flex:none;min-height:0;aspect-ratio:4/3;margin:0}
+.poster-detail-link{display:flex;justify-content:center;padding:0 0 28px}
+@media(max-width:850px){
+ .campaign-suite{padding:0 14px 44px}.creative-board{min-height:0;aspect-ratio:1/1.12}
+ .cb-hero{grid-template-columns:.9fr 1.1fr;padding:11% 5% 10%}
+ .cb-product{min-height:360px}.cb-product img{height:330px}
+ .cb-copy h1{font-size:clamp(30px,5.4vw,48px);margin:16px auto 8px}
+ .cb-copy>p{font-size:14px}.cb-spec{margin-top:14px;padding:7px 12px;font-size:12px}
+ .cb-quick{margin-top:15px}.cb-quick span{padding:9px 5px 9px 25px;font-size:11px}
+ .cb-quick span:before{width:16px;height:16px;font-size:9px}
+ .cb-brand{font-size:20px}.cb-heading{margin-bottom:18px}.cb-heading h2{font-size:34px}.cb-heading p{font-size:14px}
+ .cb-panel{padding:12% 6% 8%}.cb-benefits,.cb-proof-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+ .cb-card{min-height:230px;padding:14px 10px}.cb-illustration{height:98px}.cb-card h3{font-size:16px}.cb-card p{font-size:10px}
+ .cb-proof-card{min-height:220px;padding:14px 9px}.cb-proof-card .cb-illustration{height:80px}.cb-proof-card strong{font-size:35px}
+ .cb-scene-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.cb-scene-card{min-height:210px;padding:12px 8px}.cb-scene-card .cb-illustration{height:92px}.cb-scene-card b{font-size:12px}.cb-scene-card p{font-size:10px}
+ .cb-ingredients{gap:10px}.cb-ingredient-box,.cb-routine-box{padding:17px 13px;min-height:0}.cb-ingredient-box h3,.cb-routine-box h3{font-size:15px;padding:7px 11px}.cb-ingredient{min-height:52px;font-size:12px;gap:8px}.cb-ingredient i{width:35px;height:35px;flex-basis:35px}.cb-ingredient i svg{width:23px;height:23px}
+ .cb-routine-box p,.cb-routine span{font-size:10px}
+ .product-artwork-gallery .creative-board{aspect-ratio:1/1.12}
+ .product-artwork-gallery .cb-product{min-height:0}.product-artwork-gallery .cb-product img{height:270px}
+ .poster-detail-link{padding-bottom:16px}
+}
+@media(max-width:560px){
+ .creative-board{aspect-ratio:1/1.28}
+ .cb-hero{grid-template-columns:1fr;padding:13% 7% 12%}
+ .cb-copy{grid-column:1;grid-row:2}.cb-product{grid-column:1;grid-row:1;min-height:270px}
+ .cb-product img{height:245px;width:66%}.cb-placeholder{width:150px;height:225px}
+ .cb-copy h1{font-size:34px}.cb-copy>p{font-size:14px}
+ .cb-quick span{font-size:11px}.cb-brand{font-size:17px}
+ .cb-panel{padding:15% 7% 10%}.cb-heading h2{font-size:29px}.cb-heading p{font-size:12px}
+ .cb-card{min-height:190px;padding:12px 8px}.cb-illustration{height:78px}.cb-card h3{font-size:14px}.cb-card p{font-size:9px}
+ .cb-proof{padding:12% 5%}.cb-proof-card{min-height:175px}.cb-proof-card .cb-illustration{height:65px}.cb-proof-card b{font-size:12px}.cb-proof-card strong{font-size:28px}.cb-proof-card span{font-size:8px}
+ .cb-scene-grid{grid-template-columns:1fr}.cb-scene-card{min-height:140px;display:grid;grid-template-columns:78px 1fr;align-content:center;padding:12px;text-align:left}.cb-scene-card .cb-illustration{grid-row:1/4;height:78px;margin:0}.cb-scene-card b,.cb-scene-card p{grid-column:2}.cb-scene-card b{font-size:12px}.cb-scene-card p{font-size:9px}
+ .cb-ingredients{grid-template-columns:1fr}.cb-ingredient-box,.cb-routine-box{padding:14px}.cb-routine span{font-size:10px}
+ .product-artwork-gallery .creative-board{aspect-ratio:1/1.28}
+ .product-artwork-gallery .cb-hero{grid-template-columns:1fr;padding:13% 7% 12%}
+ .product-artwork-gallery .cb-copy{grid-column:1;grid-row:2}.product-artwork-gallery .cb-product{grid-column:1;grid-row:1}
+}
+
+/* Individual campaign pages: quiet editorial layout with clear product hierarchy. */
+body.campaign-page{background:#f7f9fb;color:#173452}
+body.campaign-page .campaign-suite{max-width:none;padding:12px clamp(14px,4vw,64px) 76px}
+body.campaign-page .creative-board{width:min(100%,1320px);min-height:clamp(560px,53vw,760px);aspect-ratio:auto;margin:22px auto 34px;overflow:hidden;border:0;border-radius:2px;background:#f7fafc;box-shadow:none}
+body.campaign-page .creative-board:before{inset:18px;border:1px solid rgba(255,255,255,.62)}
+body.campaign-page .creative-board:nth-child(2){background:linear-gradient(135deg,#f7fbfd,#e8f1f8 62%,#f9fbfc)}
+body.campaign-page .creative-board:nth-child(3){background:linear-gradient(135deg,#eef5fa,#f9fbfc 52%,#e5eff7)}
+body.campaign-page .creative-board:nth-child(4){background:linear-gradient(135deg,#f8fafb,#edf4f8 55%,#f9faf9)}
+body.campaign-page .cb-brand{left:5.5%;top:5%;font-size:24px;letter-spacing:0}
+body.campaign-page .cb-brand small{color:#607890;font-size:8px;letter-spacing:.25em}
+body.campaign-page .cb-hero{min-height:clamp(560px,53vw,760px);padding:8% 7% 7%;gap:4%;background:#eaf2fc url("campaign-ai-iceblue.png") center/cover no-repeat}
+body.campaign-page .cb-copy{text-align:left}
+body.campaign-page .cb-kicker{justify-content:flex-start;gap:10px;color:#58728c;font-size:10px;letter-spacing:.24em}
+body.campaign-page .cb-kicker:before{width:26px;background:#c6a96b}
+body.campaign-page .cb-kicker:after{display:none}
+body.campaign-page .cb-copy h1{max-width:9ch;margin:24px 0 14px;font-size:clamp(44px,5vw,70px);line-height:1.24;letter-spacing:.01em}
+body.campaign-page .cb-copy>p{max-width:25em;margin:0;color:#45637b;font-size:clamp(16px,1.4vw,20px);line-height:1.9;letter-spacing:.015em}
+body.campaign-page .cb-spec{margin-top:20px;padding:8px 0;border:0;border-bottom:1px solid #c3a76e;border-radius:0;background:transparent;box-shadow:none;color:#45637b;font:500 13px/1.5 "Microsoft YaHei","Noto Sans SC",sans-serif;letter-spacing:.08em}
+body.campaign-page .cb-quick{max-width:430px;margin:24px 0 0;border-top:1px solid rgba(80,112,142,.26)}
+body.campaign-page .cb-quick span{padding:11px 6px 11px 18px;border-color:rgba(80,112,142,.2);color:#294762;font:400 13px/1.45 "Microsoft YaHei","Noto Sans SC",sans-serif}
+body.campaign-page .cb-quick span:before{content:"";left:2px;width:5px;height:5px;border:0;background:#c2a36a}
+body.campaign-page .cb-product img{width:min(82%,460px);height:clamp(390px,39vw,540px);filter:drop-shadow(10px 18px 18px rgba(31,59,85,.16))}
+body.campaign-page .cb-foot{left:7%;right:7%;bottom:3%;color:#647c90;font-size:9px;letter-spacing:.06em}
+body.campaign-page .cb-panel{padding:8% 7% 7%}
+body.campaign-page .cb-heading{max-width:760px;margin:0 auto 42px;text-align:left}
+body.campaign-page .cb-heading h2{margin:15px 0 7px;font-size:clamp(36px,4.1vw,58px);letter-spacing:.02em}
+body.campaign-page .cb-heading p{color:#60768a;font-size:15px;letter-spacing:.015em}
+body.campaign-page .cb-gold-rule{width:46px;height:2px;margin:16px 0;background:#c9aa6d}
+body.campaign-page .cb-benefits{grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:auto 0;border-top:1px solid rgba(88,119,148,.24);border-bottom:1px solid rgba(88,119,148,.24)}
+body.campaign-page .cb-card{position:relative;min-height:270px;align-items:flex-start;padding:30px 24px 28px;border:0;border-right:1px solid rgba(88,119,148,.2);border-radius:0;background:transparent;box-shadow:none;text-align:left}
+body.campaign-page .cb-card:last-child{border-right:0}
+body.campaign-page .cb-card .cb-illustration{height:38px;justify-content:start;margin:0 0 25px}
+body.campaign-page .cb-card .cb-illustration svg{display:none}
+body.campaign-page .cb-card .cb-illustration:after{content:"01";color:#9ab0c2;font:italic 24px/1 Georgia,serif;letter-spacing:.04em}
+body.campaign-page .cb-card:nth-child(2) .cb-illustration:after{content:"02"}
+body.campaign-page .cb-card:nth-child(3) .cb-illustration:after{content:"03"}
+body.campaign-page .cb-card:nth-child(4) .cb-illustration:after{content:"04"}
+body.campaign-page .cb-card h3{margin:0 0 12px;color:#173452;font-size:20px;letter-spacing:.01em}
+body.campaign-page .cb-card p{max-width:20em;color:#5e7488;font-size:13px;line-height:1.9}
+body.campaign-page .cb-proof{padding:9% 7% 8%}
+body.campaign-page .cb-proof .cb-brand{display:block}
+body.campaign-page .cb-proof-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid rgba(88,119,148,.23);border-bottom:1px solid rgba(88,119,148,.23)}
+body.campaign-page .cb-proof-card{min-height:270px;justify-content:center;padding:24px 18px;border:0;border-right:1px solid rgba(88,119,148,.2);border-radius:0;background:transparent;box-shadow:none;text-align:left}
+body.campaign-page .cb-proof-card:last-child{border-right:0}
+body.campaign-page .cb-proof-card .cb-illustration{display:none}
+body.campaign-page .cb-proof-card b{color:#60778b;font-size:13px;font-weight:400;letter-spacing:.08em}
+body.campaign-page .cb-proof-card strong{margin:14px 0 7px;color:#183b5b;font-size:clamp(37px,4vw,58px);font-style:normal;letter-spacing:-.06em}
+body.campaign-page .cb-proof-card span{max-width:13em;color:#61788c;font-size:12px}
+body.campaign-page .cb-proof .cb-panel{padding:0;width:100%}
+body.campaign-page .cb-proof .cb-heading{margin:0 auto 34px}
+body.campaign-page .cb-scene-grid{gap:0;border-top:1px solid rgba(88,119,148,.24);border-bottom:1px solid rgba(88,119,148,.24)}
+body.campaign-page .cb-scene-card{min-height:250px;padding:24px;border:0;border-right:1px solid rgba(88,119,148,.2);border-radius:0;background:transparent;box-shadow:none;text-align:left}
+body.campaign-page .cb-scene-card:last-child{border-right:0}
+body.campaign-page .cb-scene-card .cb-illustration{height:90px;justify-content:start;margin:0 0 15px}
+body.campaign-page .cb-scene-card .cb-illustration svg{width:82px;height:82px;filter:none;opacity:.78}
+body.campaign-page .cb-scene-card b{color:#183b5b;font-size:16px}
+body.campaign-page .cb-scene-card p{color:#61788c;font-size:12px}
+body.campaign-page .cb-ingredients{gap:clamp(16px,3vw,38px);align-items:stretch}
+body.campaign-page .cb-ingredient-box,body.campaign-page .cb-routine-box{min-height:300px;padding:26px 28px;border:1px solid rgba(255,255,255,.92);border-radius:2px;background:rgba(255,255,255,.52);box-shadow:0 14px 34px rgba(40,72,105,.045)}
+body.campaign-page .cb-ingredient-box h3,body.campaign-page .cb-routine-box h3{margin:0 0 18px;padding:0 0 12px;border-bottom:1px solid rgba(88,119,148,.25);border-radius:0;background:transparent;color:#183b5b;font-size:18px;box-shadow:none}
+body.campaign-page .cb-ingredient{min-height:58px;padding:10px 2px;border-color:rgba(88,119,148,.17);color:#294762;font-size:14px}
+body.campaign-page .cb-ingredient-art{display:block;width:100%;max-height:138px;margin:12px auto 0;object-fit:contain;opacity:.95}
+body.campaign-page .cb-ingredient i{width:8px;height:8px;flex-basis:8px;border:0;border-radius:50%;background:#c7a96c;box-shadow:none}
+body.campaign-page .cb-ingredient i svg{display:none}
+body.campaign-page .cb-routine-box p{color:#61788c;font-size:13px}
+body.campaign-page .cb-routine span{padding:12px 0;border:0;border-bottom:1px solid rgba(88,119,148,.17);border-radius:0;background:transparent;color:#294762;font-size:13px}
+body.campaign-page .cb-board-nav{padding-top:8px}
+body.campaign-page .cb-board-nav a{border-color:#bfd0dc;border-radius:2px;background:#fff;box-shadow:none;color:#294762;font-size:13px}
+body.campaign-page .cb-foot{line-height:1.7}
+body.campaign-page .cb-hero-ingredient-art{display:block;width:min(100%,500px);height:auto;max-height:122px;margin:16px 0 0;object-fit:contain;object-position:left center;filter:drop-shadow(0 8px 14px rgba(54,100,144,.08))}
+body.campaign-209 .cb-placeholder{position:relative;width:clamp(190px,19vw,250px);height:clamp(330px,34vw,420px);padding:118px 22px 28px;overflow:visible;border:1px solid rgba(255,255,255,.96);border-radius:18px 18px 34px 34px;background:linear-gradient(115deg,rgba(255,255,255,.95),rgba(225,239,247,.82) 48%,rgba(255,255,255,.9));box-shadow:inset 12px 0 24px rgba(255,255,255,.65),inset -10px 0 22px rgba(162,196,217,.16),0 30px 50px rgba(36,72,103,.15);color:#24455e}
+body.campaign-209 .cb-placeholder:before{content:"";position:absolute;top:-17px;left:50%;width:82px;height:22px;transform:translateX(-50%);border:1px solid rgba(255,255,255,.95);border-radius:7px 7px 2px 2px;background:linear-gradient(90deg,#d7e6ee,#fff 48%,#d5e4ec);box-shadow:0 5px 10px rgba(42,78,106,.08)}
+body.campaign-209 .cb-placeholder:after{content:"";position:absolute;top:89px;left:18%;right:18%;height:1px;background:linear-gradient(90deg,transparent,#c3a66d,transparent)}
+body.campaign-209 .cb-placeholder b{font:italic 600 21px/1 Georgia,"Noto Serif SC",serif;letter-spacing:.01em}
+body.campaign-209 .cb-placeholder span{margin-top:20px;color:#5b7386;font-size:12px;line-height:2;letter-spacing:.08em}
+@media(max-width:850px){
+ body.campaign-page .creative-board,body.campaign-page .cb-hero{min-height:0}
+ body.campaign-page .cb-hero{aspect-ratio:auto;padding:14% 7% 12%}
+ body.campaign-page .cb-copy h1{font-size:clamp(34px,7vw,52px)}
+ body.campaign-page .cb-product img{height:320px}
+ body.campaign-page .cb-panel{padding:12% 7% 10%}
+ body.campaign-page .cb-card{min-height:210px;padding:20px 15px}
+ body.campaign-page .cb-card .cb-illustration{height:30px;margin-bottom:16px}
+ body.campaign-page .cb-proof{padding:12% 7%}
+ body.campaign-page .cb-proof-card{min-height:210px;padding:18px 13px}
+ body.campaign-page .cb-proof-card strong{font-size:clamp(30px,6vw,44px)}
+ body.campaign-page .cb-ingredients{gap:10px}
+}
+@media(max-width:560px){
+ body.campaign-page .campaign-suite{padding:8px 12px 48px}
+ body.campaign-page .creative-board{margin:12px auto 20px}
+ body.campaign-page .creative-board:before{inset:8px}
+ body.campaign-page .cb-hero{padding:17% 8% 14%}
+ body.campaign-page .cb-product{min-height:235px}
+ body.campaign-page .cb-product img{height:235px;width:60%}
+ body.campaign-page .cb-copy h1{font-size:34px}
+ body.campaign-page .cb-copy>p{font-size:13px}
+ body.campaign-page .cb-hero-ingredient-art{width:100%;max-height:76px;margin-top:8px}
+ body.campaign-209 .cb-placeholder{width:170px;height:260px;padding:82px 15px 18px;border-radius:14px 14px 25px 25px}
+ body.campaign-209 .cb-placeholder:before{top:-12px;width:62px;height:17px}
+ body.campaign-209 .cb-placeholder:after{top:64px}
+ body.campaign-209 .cb-placeholder b{font-size:16px}
+ body.campaign-209 .cb-placeholder span{margin-top:15px;font-size:9px}
+ body.campaign-page .cb-quick span{padding:8px 4px 8px 15px;font-size:10px}
+ body.campaign-page .cb-panel{padding:15% 8% 12%}
+ body.campaign-page .cb-heading{margin-bottom:22px}
+ body.campaign-page .cb-heading h2{font-size:28px}
+ body.campaign-page .cb-heading p{font-size:12px}
+ body.campaign-page .cb-benefits{grid-template-columns:repeat(2,minmax(0,1fr))}
+ body.campaign-page .cb-card{min-height:165px;padding:17px 12px;border-bottom:1px solid rgba(88,119,148,.2)}
+ body.campaign-page .cb-card:nth-child(2){border-right:0}
+ body.campaign-page .cb-card:nth-child(3),body.campaign-page .cb-card:nth-child(4){border-bottom:0}
+ body.campaign-page .cb-card h3{font-size:15px}
+ body.campaign-page .cb-card p{font-size:10px}
+ body.campaign-page .cb-proof{padding:15% 7%}
+ body.campaign-page .cb-proof-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ body.campaign-page .cb-proof-card{min-height:155px;padding:14px 10px;border-bottom:1px solid rgba(88,119,148,.2)}
+ body.campaign-page .cb-proof-card:nth-child(2){border-right:0}
+ body.campaign-page .cb-proof-card:nth-child(3),body.campaign-page .cb-proof-card:nth-child(4){border-bottom:0}
+ body.campaign-page .cb-proof-card strong{font-size:29px}
+ body.campaign-page .cb-proof-card b,body.campaign-page .cb-proof-card span{font-size:9px}
+ body.campaign-page .cb-scene-grid{grid-template-columns:1fr}
+ body.campaign-page .cb-scene-card{min-height:120px;display:grid;grid-template-columns:64px 1fr;align-content:center;padding:12px;border:0;border-bottom:1px solid rgba(88,119,148,.2)}
+ body.campaign-page .cb-scene-card:last-child{border-bottom:0}
+ body.campaign-page .cb-scene-card .cb-illustration{grid-row:1/3;height:58px;margin:0}
+ body.campaign-page .cb-scene-card .cb-illustration svg{width:54px;height:54px}
+ body.campaign-page .cb-scene-card b,body.campaign-page .cb-scene-card p{grid-column:2}
+ body.campaign-page .cb-ingredients{grid-template-columns:1fr}
+ body.campaign-page .cb-ingredient-box,body.campaign-page .cb-routine-box{min-height:0;padding:17px 15px}
+}

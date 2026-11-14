@@ -1,0 +1,222 @@
+:root{--cb-ink:#122b50;--cb-blue:#366595;--cb-gold:#c8a35a;--cb-mist:#eaf2fb;--cb-line:#c9d8e8}
+.campaign-suite{max-width:1480px;margin:0 auto;padding:20px clamp(14px,3vw,42px) 72px}
+.creative-board{position:relative;isolation:isolate;overflow:hidden;min-height:760px;margin:24px 0 40px;aspect-ratio:1.42/1;border:1px solid rgba(152,179,212,.7);border-radius:4px;background:#e9f2fc url("campaign-ai-iceblue.png") center/cover no-repeat;box-shadow:0 28px 80px rgba(24,57,101,.12);color:var(--cb-ink)}
+.creative-board:before{content:"";position:absolute;inset:18px;border:1px solid rgba(255,255,255,.76);pointer-events:none}
+.cb-brand{position:absolute;left:5%;top:5%;z-index:2;color:var(--cb-ink);font:italic 600 24px/1 Georgia,"Noto Serif SC",serif;letter-spacing:-.04em}
+.cb-brand small{display:block;margin-top:5px;font:500 8px/1.2 Arial,sans-serif;letter-spacing:.32em}
+.cb-kicker{display:flex;align-items:center;gap:14px;color:#5b7697;font:600 10px/1.4 Arial,sans-serif;letter-spacing:.3em;text-transform:uppercase}
+.cb-kicker:before,.cb-kicker:after{content:"";width:34px;height:1px;background:linear-gradient(90deg,transparent,var(--cb-gold))}
+.cb-kicker:after{background:linear-gradient(90deg,var(--cb-gold),transparent)}
+.cb-hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;height:100%;padding:9% 7% 7%;gap:4%}
+.cb-copy{position:relative;z-index:2;max-width:620px}
+.cb-copy h1{margin:24px 0 15px;font:500 clamp(38px,4.3vw,66px)/1.2 "Noto Serif SC","Songti SC",serif;letter-spacing:-.045em}
+.cb-copy>p{max-width:32em;margin:0;color:#4f6788;font:500 clamp(16px,1.5vw,22px)/1.8 "Noto Serif SC","Songti SC",serif}
+.cb-spec{display:inline-flex;margin-top:24px;padding:9px 16px;border:1px solid #bacce0;border-radius:99px;background:rgba(255,255,255,.68);color:#4d6889;font-size:11px;letter-spacing:.06em}
+.cb-quick{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.cb-quick span{padding:10px 15px;border:1px solid rgba(255,255,255,.95);border-radius:4px;background:rgba(255,255,255,.7);box-shadow:0 9px 22px rgba(37,72,117,.08);font:500 12px/1.5 "Noto Serif SC","Songti SC",serif}
+.cb-product{position:relative;display:grid;place-items:center;min-height:520px}
+.cb-product:before{content:"";position:absolute;width:min(88%,500px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#fff 0 15%,rgba(255,255,255,.78) 38%,rgba(198,220,245,.45) 65%,transparent 70%);box-shadow:inset 0 0 40px rgba(255,255,255,.9)}
+.cb-product img{position:relative;z-index:1;width:min(76%,420px);height:490px;object-fit:contain;filter:drop-shadow(15px 22px 20px rgba(30,55,90,.22));mix-blend-mode:multiply}
+.cb-placeholder{position:relative;z-index:1;width:240px;height:370px;display:grid;place-content:center;text-align:center;border:1px solid rgba(255,255,255,.95);border-radius:18px;background:linear-gradient(145deg,rgba(255,255,255,.74),rgba(208,225,245,.55));box-shadow:0 22px 46px rgba(35,69,113,.13);color:#536e8e}
+.cb-placeholder b{font:italic 600 24px Georgia,serif}.cb-placeholder span{margin-top:12px;font-size:12px;line-height:1.8}
+.cb-foot{position:absolute;left:7%;right:7%;bottom:3.6%;text-align:center;color:#607894;font-size:9px;letter-spacing:.13em}
+.cb-panel{height:100%;padding:8% 7% 6%;display:flex;flex-direction:column}
+.cb-heading{text-align:center;max-width:900px;margin:0 auto 42px}
+.cb-heading h2{margin:17px 0 10px;font:500 clamp(36px,4vw,56px)/1.25 "Noto Serif SC","Songti SC",serif;letter-spacing:.08em}
+.cb-heading p{margin:0;color:#59708f;font:400 clamp(15px,1.5vw,20px)/1.7 "Noto Serif SC","Songti SC",serif}
+.cb-gold-rule{width:170px;height:3px;margin:18px auto;background:linear-gradient(90deg,transparent,#e5bd70,transparent);border-radius:50%}
+.cb-benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin:auto 0}
+.cb-card{min-height:250px;padding:26px 22px;border:1px solid rgba(255,255,255,.96);border-radius:24px;background:linear-gradient(150deg,rgba(255,255,255,.83),rgba(226,238,251,.67));box-shadow:0 12px 32px rgba(48,83,127,.09);text-align:center}
+.cb-orb{width:78px;height:78px;display:grid;place-items:center;margin:0 auto 20px;border-radius:50%;border:1px solid rgba(255,255,255,.95);background:radial-gradient(circle at 35% 30%,#fff,#c5e0fa 55%,rgba(157,193,231,.55));box-shadow:inset 0 0 14px #fff,0 7px 18px rgba(50,100,157,.14);color:#3976ae;font:400 28px Georgia,serif}
+.cb-card h3{margin:0 0 12px;font:500 21px/1.35 "Noto Serif SC","Songti SC",serif}
+.cb-card p{margin:0;color:#5c718d;font:400 14px/1.85 "Noto Serif SC","Songti SC",serif}
+.cb-metric-layout{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:6%;flex:1}
+.cb-metric-value{padding:42px 26px;border:1px solid rgba(255,255,255,.98);border-radius:28px;background:linear-gradient(145deg,rgba(255,255,255,.88),rgba(220,236,251,.74));text-align:center;box-shadow:0 14px 36px rgba(43,76,118,.1)}
+.cb-metric-value strong{display:block;color:#17385f;font:italic 500 clamp(60px,8vw,112px)/1 Georgia,serif;letter-spacing:-.06em}
+.cb-metric-value span{display:block;margin-top:16px;color:#386d9d;font:500 18px/1.5 "Noto Serif SC","Songti SC",serif}
+.cb-metric-copy h3{margin:0 0 16px;font:500 30px/1.4 "Noto Serif SC","Songti SC",serif}
+.cb-metric-copy p{margin:10px 0;color:#506986;font-size:15px;line-height:1.9}
+.cb-steps{display:flex;align-items:stretch;justify-content:center;gap:14px;margin:auto 0}
+.cb-step{flex:1;min-height:210px;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:22px;border:1px solid rgba(255,255,255,.95);border-radius:20px;background:rgba(255,255,255,.73);box-shadow:0 12px 28px rgba(44,79,120,.09);text-align:center}
+.cb-step b{display:block;margin-bottom:10px;color:#2c6090;font:500 26px/1.4 "Noto Serif SC","Songti SC",serif}
+.cb-step span{color:#5e7189;font-size:14px;line-height:1.8}
+.cb-arrow{align-self:center;color:#c8a35a;font:300 28px/1 Georgia,serif}
+.cb-ingredients{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;flex:1}
+.cb-ingredient-box,.cb-routine-box{padding:30px;border:1px solid rgba(255,255,255,.97);border-radius:26px;background:linear-gradient(145deg,rgba(255,255,255,.83),rgba(222,237,251,.66));box-shadow:0 12px 34px rgba(44,77,119,.08)}
+.cb-ingredient-box h3,.cb-routine-box h3{margin:0 0 22px;font:500 24px/1.4 "Noto Serif SC","Songti SC",serif}
+.cb-ingredient-list{display:grid;gap:12px}
+.cb-ingredient{display:flex;align-items:center;gap:15px;padding:13px 15px;border-bottom:1px solid rgba(157,182,211,.35);color:#243f63;font:500 16px/1.5 "Noto Serif SC","Songti SC",serif}
+.cb-ingredient i{width:42px;height:42px;flex:0 0 42px;display:grid;place-items:center;border-radius:50%;background:radial-gradient(circle,#fff,#cde3f8);color:#4d80b0;font:normal 17px Georgia,serif}
+.cb-routine-box p{margin:0 0 15px;color:#5a708c;font-size:14px;line-height:1.85}
+.cb-routine{display:grid;gap:10px;margin-top:20px}
+.cb-routine span{padding:13px 15px;border-radius:999px;border:1px solid rgba(216,190,132,.64);background:rgba(255,255,255,.7);color:#23446c;font:500 14px/1.5 "Noto Serif SC","Songti SC",serif}
+.cb-board-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;padding:8px 0 28px}
+.cb-board-nav a{padding:11px 17px;border:1px solid #c8d7e8;border-radius:99px;background:#fff;color:#355d89;text-decoration:none;font-size:12px}
+@media(max-width:850px){.creative-board{min-height:0;aspect-ratio:auto;min-height:720px;margin:16px 0 24px}.cb-hero{grid-template-columns:1fr;padding:13% 8% 12%;gap:0}.cb-product{min-height:300px;grid-row:1}.cb-product img{height:330px;width:62%}.cb-placeholder{height:260px;width:180px}.cb-copy h1{font-size:clamp(38px,9vw,58px);margin:15px 0 10px}.cb-copy>p{font-size:17px}.cb-quick{margin-top:18px}.cb-panel{padding:12% 8% 10%}.cb-heading{margin-bottom:25px}.cb-heading h2{font-size:36px}.cb-benefits{grid-template-columns:repeat(2,1fr)}.cb-card{min-height:205px;padding:18px 14px}.cb-orb{width:60px;height:60px;margin-bottom:12px}.cb-card h3{font-size:18px}.cb-card p{font-size:12px}.cb-metric-layout,.cb-ingredients{grid-template-columns:1fr;gap:15px}.cb-metric-value{padding:24px}.cb-metric-value strong{font-size:68px}.cb-metric-copy h3{font-size:24px}.cb-steps{gap:8px}.cb-step{min-height:150px;padding:12px 8px}.cb-step b{font-size:18px}.cb-step span{font-size:11px}.cb-arrow{font-size:17px}.cb-ingredient-box,.cb-routine-box{padding:20px}.cb-ingredient{font-size:13px}.cb-ingredient i{width:34px;height:34px;flex-basis:34px}}
+@media(max-width:480px){.campaign-suite{padding:10px 12px 45px}.creative-board{min-height:780px}.cb-benefits{grid-template-columns:1fr 1fr;gap:8px}.cb-card{min-height:190px;padding:15px 10px}.cb-card h3{font-size:16px}.cb-card p{font-size:11px}.cb-heading h2{font-size:31px}.cb-heading p{font-size:14px}.cb-foot{font-size:8px}.cb-steps{flex-direction:column}.cb-arrow{transform:rotate(90deg)}}
+.cb-proof{display:flex;align-items:center;justify-content:center}.cb-proof>.cb-metric-layout,.cb-proof>.cb-panel{width:100%}.cb-proof>.cb-panel{height:100%}
+.cb-hero .cb-copy{grid-column:2;grid-row:1}.cb-hero .cb-product{grid-column:1;grid-row:1}
+@media(max-width:850px){.cb-hero .cb-copy{grid-column:1;grid-row:2}.cb-hero .cb-product{grid-column:1;grid-row:1}}
+
+/* Reworked campaign canvases: editorial product artwork rather than generic information cards */
+.creative-board{aspect-ratio:1.36/1;min-height:760px;border-radius:0;background-image:linear-gradient(90deg,rgba(231,241,253,.08),rgba(244,248,255,.18)),url("campaign-ai-iceblue.png");}
+.cb-hero .cb-copy{padding:20px 0 30px}.cb-copy h1{max-width:12ch;font-size:clamp(46px,5vw,76px);letter-spacing:-.035em}
+.cb-hero .cb-quick{display:grid;grid-template-columns:repeat(2,minmax(150px,1fr));max-width:560px;gap:0;margin-top:28px;border-top:1px solid rgba(120,154,194,.26)}
+.cb-hero .cb-quick span{position:relative;padding:14px 12px 14px 34px;border:0;border-bottom:1px solid rgba(120,154,194,.26);border-radius:0;background:transparent;box-shadow:none;color:#18375d;font:500 15px/1.45 "Noto Serif SC","Songti SC",serif}
+.cb-hero .cb-quick span:before{content:"✓";position:absolute;left:4px;top:50%;transform:translateY(-50%);width:20px;height:20px;display:grid;place-items:center;border:1px solid #c89f50;border-radius:50%;color:#b5883c;font:500 12px/1 Georgia,serif}
+.cb-product img{width:min(78%,450px);height:540px;filter:drop-shadow(12px 24px 24px rgba(29,59,99,.24))}
+.cb-heading{margin-bottom:34px}.cb-heading h2{font-size:clamp(42px,4.5vw,64px)}
+.cb-benefits{gap:13px;margin-top:auto;margin-bottom:auto}
+.cb-card{min-height:355px;padding:20px 18px 25px;border-radius:27px;background:linear-gradient(155deg,rgba(255,255,255,.89),rgba(219,235,251,.74));box-shadow:0 20px 46px rgba(48,83,127,.1);display:flex;flex-direction:column;align-items:center}
+.cb-illustration{width:100%;height:168px;display:grid;place-items:center;margin:0 auto 8px}
+.cb-illustration svg{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 9px 10px rgba(53,100,151,.14))}
+.cb-card h3{font-size:21px;margin:6px 0 10px}.cb-card p{font-size:13px;max-width:21em}
+.cb-proof{background-image:linear-gradient(180deg,rgba(236,244,253,.05),rgba(230,241,253,.18)),url("campaign-ai-iceblue.png")}
+.cb-proof-grid{width:100%;display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:10px auto}
+.cb-proof-card{min-height:320px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px 16px;border:1px solid rgba(255,255,255,.98);border-radius:24px;background:linear-gradient(155deg,rgba(255,255,255,.88),rgba(221,237,251,.71));box-shadow:0 14px 38px rgba(43,77,120,.1)}
+.cb-proof-card .cb-illustration{height:126px;margin:0 0 6px}
+.cb-proof-card b{display:block;color:#23446e;font:500 18px/1.5 "Noto Serif SC","Songti SC",serif}
+.cb-proof-card strong{display:block;margin:10px 0 5px;color:#14345e;font:italic 500 clamp(34px,4vw,56px)/1 Georgia,serif;letter-spacing:-.045em}
+.cb-proof-card span{color:#617791;font-size:12px;line-height:1.7}
+.cb-scene-grid{width:100%;display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin:auto 0}
+.cb-scene-card{position:relative;min-height:330px;overflow:hidden;padding:24px 22px;border:1px solid rgba(255,255,255,.98);border-radius:26px;background:linear-gradient(155deg,rgba(255,255,255,.88),rgba(220,236,251,.74));box-shadow:0 14px 38px rgba(43,77,120,.1)}
+.cb-scene-card .cb-illustration{height:165px;margin-bottom:18px}
+.cb-scene-card b{display:block;margin-bottom:8px;font:500 21px/1.4 "Noto Serif SC","Songti SC",serif}
+.cb-scene-card p{margin:0;color:#5b718d;font-size:13px;line-height:1.8}
+.cb-ingredient-box,.cb-routine-box{border-radius:4px}
+.cb-ingredient-list{gap:0}.cb-ingredient{min-height:78px;padding:14px 10px;border-bottom:1px solid rgba(157,182,211,.4);font-size:16px}
+.cb-ingredient i{width:50px;height:50px;flex-basis:50px;background:radial-gradient(circle at 35% 30%,#fff,#b9dcf7 65%,#8fbbe6);box-shadow:inset 0 0 9px #fff,0 7px 15px rgba(50,100,157,.14)}
+.cb-routine-box h3,.cb-ingredient-box h3{padding-bottom:14px;border-bottom:1px solid rgba(157,182,211,.42)}
+.cb-routine span{border-radius:4px;padding:15px 18px}
+@media(max-width:850px){.creative-board{aspect-ratio:auto;min-height:760px}.cb-hero .cb-quick{grid-template-columns:1fr 1fr}.cb-hero .cb-copy{grid-column:1;grid-row:2}.cb-hero .cb-product{grid-column:1;grid-row:1}.cb-product img{height:360px}.cb-benefits{margin-top:0}.cb-card{min-height:265px}.cb-illustration{height:116px}.cb-proof-grid{grid-template-columns:repeat(2,1fr)}.cb-proof-card{min-height:240px}.cb-scene-grid{grid-template-columns:1fr}.cb-scene-card{min-height:220px;display:grid;grid-template-columns:120px 1fr;column-gap:15px;align-content:center}.cb-scene-card .cb-illustration{grid-row:1/4;height:120px;margin:0}.cb-scene-card b,.cb-scene-card p{grid-column:2}.cb-panel{padding:12% 8% 10%}}
+@media(max-width:480px){.cb-heading h2{font-size:33px}.cb-benefits{grid-template-columns:1fr 1fr;gap:8px}.cb-card{min-height:255px;padding:15px 10px}.cb-illustration{height:103px}.cb-card h3{font-size:16px}.cb-card p{font-size:11px}.cb-hero .cb-quick span{font-size:13px}.cb-proof-grid{gap:8px}.cb-proof-card{min-height:210px;padding:16px 10px}.cb-proof-card .cb-illustration{height:88px}.cb-proof-card b{font-size:14px}.cb-proof-card strong{font-size:34px}.cb-scene-card{grid-template-columns:88px 1fr;min-height:175px;padding:16px 13px}.cb-scene-card .cb-illustration{height:88px}.cb-scene-card b{font-size:16px}.cb-scene-card p{font-size:11px}}
+.cb-ingredient i svg{width:31px;height:31px;display:block}.cb-ingredient i{overflow:hidden}.cb-proof .cb-foot{max-width:90%;left:5%;right:5%;font-size:9px;line-height:1.5;letter-spacing:.04em}
+
+.ad-product-visual.product-artwork-gallery{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:18px;min-height:0;padding:0;background:transparent}
+.product-artwork-gallery .creative-board{flex:none;width:100%;min-height:0;aspect-ratio:1.28/1;margin:0;border-radius:0}
+.product-artwork-gallery .creative-board:before{inset:9px}
+.product-artwork-gallery .cb-brand{left:5%;top:4%;font-size:15px}
+.product-artwork-gallery .cb-brand small{font-size:6px}
+.product-artwork-gallery .cb-hero{padding:12% 6% 8%;gap:2%}
+.product-artwork-gallery .cb-hero .cb-copy{padding:6px 0 10px}
+.product-artwork-gallery .cb-copy h1{margin:12px 0 8px;font-size:clamp(24px,2.55vw,36px);line-height:1.24}
+.product-artwork-gallery .cb-copy>p{font-size:12px;line-height:1.65}
+.product-artwork-gallery .cb-spec{margin-top:10px;padding:6px 9px;font-size:8px}
+.product-artwork-gallery .cb-hero .cb-quick{margin-top:12px}
+.product-artwork-gallery .cb-hero .cb-quick span{padding:8px 5px 8px 25px;font-size:9px}
+.product-artwork-gallery .cb-hero .cb-quick span:before{width:15px;height:15px;font-size:9px}
+.product-artwork-gallery .cb-product{min-height:0}
+.product-artwork-gallery .cb-product img{width:86%;height:210px}
+.product-artwork-gallery .cb-placeholder{width:112px;height:180px;font-size:9px}
+.product-artwork-gallery .cb-placeholder b{font-size:17px}
+.product-artwork-gallery .cb-placeholder span{font-size:9px}
+.product-artwork-gallery .cb-foot{font-size:6px;bottom:2.4%}
+.product-artwork-gallery .cb-panel{padding:12% 6% 7%}
+.product-artwork-gallery .cb-heading{margin-bottom:14px}
+.product-artwork-gallery .cb-heading h2{margin:8px 0 5px;font-size:27px}
+.product-artwork-gallery .cb-heading p{font-size:10px}
+.product-artwork-gallery .cb-gold-rule{width:100px;margin:9px auto}
+.product-artwork-gallery .cb-benefits{grid-template-columns:repeat(2,1fr);gap:7px}
+.product-artwork-gallery .cb-card{min-height:145px;padding:10px 7px;border-radius:14px}
+.product-artwork-gallery .cb-illustration{height:64px;margin:0 0 4px}
+.product-artwork-gallery .cb-card h3{margin:3px 0 5px;font-size:12px}
+.product-artwork-gallery .cb-card p{font-size:8px;line-height:1.55}
+.product-artwork-gallery .cb-proof-grid{grid-template-columns:repeat(2,1fr);gap:7px}
+.product-artwork-gallery .cb-proof-card{min-height:135px;padding:8px;border-radius:13px}
+.product-artwork-gallery .cb-proof-card .cb-illustration{height:53px}
+.product-artwork-gallery .cb-proof-card b{font-size:11px}
+.product-artwork-gallery .cb-proof-card strong{margin:4px 0;font-size:24px}
+.product-artwork-gallery .cb-proof-card span{font-size:8px}
+.product-artwork-gallery .cb-scene-grid{grid-template-columns:repeat(3,1fr);gap:6px}
+.product-artwork-gallery .cb-scene-card{min-height:180px;padding:10px 7px;border-radius:13px}
+.product-artwork-gallery .cb-scene-card .cb-illustration{height:65px;margin-bottom:7px}
+.product-artwork-gallery .cb-scene-card b{font-size:10px;line-height:1.45}
+.product-artwork-gallery .cb-scene-card p{font-size:8px;line-height:1.55}
+.product-artwork-gallery .cb-ingredients{grid-template-columns:1fr 1fr;gap:7px}
+.product-artwork-gallery .cb-ingredient-box,.product-artwork-gallery .cb-routine-box{padding:12px 8px}
+.product-artwork-gallery .cb-ingredient-box h3,.product-artwork-gallery .cb-routine-box h3{margin-bottom:8px;padding-bottom:7px;font-size:13px}
+.product-artwork-gallery .cb-ingredient{min-height:37px;padding:5px 2px;font-size:8px;gap:5px}
+.product-artwork-gallery .cb-ingredient i{width:23px;height:23px;flex-basis:23px}
+.product-artwork-gallery .cb-ingredient i svg{width:17px;height:17px}
+.product-artwork-gallery .cb-routine-box p{font-size:8px;line-height:1.5;margin-bottom:5px}
+.product-artwork-gallery .cb-routine{gap:4px;margin-top:6px}
+.product-artwork-gallery .cb-routine span{padding:5px 6px;font-size:8px}
+.product-artwork-gallery .cb-proof .cb-foot{font-size:6px}
+@media(max-width:850px){.ad-product-visual.product-artwork-gallery{min-height:0}.product-artwork-gallery .cb-hero{grid-template-columns:1fr 1fr;padding:12% 6% 8%}.product-artwork-gallery .cb-hero .cb-copy{grid-column:2;grid-row:1}.product-artwork-gallery .cb-hero .cb-product{grid-column:1;grid-row:1;min-height:0}.product-artwork-gallery .cb-product img{height:180px}.product-artwork-gallery .cb-panel{padding:13% 6% 7%}.product-artwork-gallery .cb-proof{padding:8% 5%}}
+
+/* Product series: display each designed canvas at its native full-width composition */
+.ad-product{display:block;min-height:0;margin:0 0 68px;overflow:visible;border:0;border-radius:0;background:transparent;box-shadow:none}
+.ad-product:nth-child(even) .ad-product-visual{order:initial}
+.ad-product-visual.product-artwork-gallery{width:100%;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:26px;min-height:0;padding:0;background:transparent}
+.ad-product-copy{display:none}
+.product-artwork-gallery>img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;mix-blend-mode:normal;filter:none}
+.product-artwork-gallery .creative-board{flex:none;width:100%;min-height:0;aspect-ratio:4/3;margin:0;border-radius:0}
+.product-artwork-gallery .creative-board:before{inset:16px}
+.product-artwork-gallery .cb-brand{font-size:22px}
+.product-artwork-gallery .cb-brand small{font-size:8px}
+.product-artwork-gallery .cb-copy h1{font-size:clamp(42px,5vw,70px)}
+.product-artwork-gallery .cb-copy>p{font-size:clamp(14px,1.5vw,21px)}
+.product-artwork-gallery .cb-spec{font-size:11px;padding:9px 15px}
+.product-artwork-gallery .cb-hero .cb-quick span{font-size:14px;padding:13px 10px 13px 35px}
+.product-artwork-gallery .cb-product img{height:500px}
+.product-artwork-gallery .cb-heading h2{font-size:clamp(39px,4.4vw,62px)}
+.product-artwork-gallery .cb-heading p{font-size:18px}
+.product-artwork-gallery .cb-card{min-height:310px;padding:24px 19px}
+.product-artwork-gallery .cb-illustration{height:150px}
+.product-artwork-gallery .cb-card h3{font-size:20px}
+.product-artwork-gallery .cb-card p{font-size:13px}
+.product-artwork-gallery .cb-proof-card{min-height:300px}
+.product-artwork-gallery .cb-proof-card .cb-illustration{height:122px}
+.product-artwork-gallery .cb-proof-card strong{font-size:clamp(40px,4vw,62px)}
+.product-artwork-gallery .cb-scene-card{min-height:285px;padding:23px}
+.product-artwork-gallery .cb-scene-card .cb-illustration{height:138px}
+.product-artwork-gallery .cb-scene-card b{font-size:17px}
+.product-artwork-gallery .cb-scene-card p{font-size:12px}
+.product-artwork-gallery .cb-ingredient{min-height:70px;font-size:15px}
+.product-artwork-gallery .cb-ingredient i{width:48px;height:48px;flex-basis:48px}
+.product-artwork-gallery .cb-ingredient i svg{width:30px;height:30px}
+@media(max-width:850px){
+ .ad-product{margin-bottom:44px}
+ .ad-product-visual.product-artwork-gallery{min-height:0}
+ .product-artwork-gallery .creative-board{aspect-ratio:1/1;min-height:0}
+ .product-artwork-gallery .cb-hero{grid-template-columns:1fr 1fr;padding:11% 6% 8%}
+ .product-artwork-gallery .cb-hero .cb-copy{grid-column:2;grid-row:1}
+ .product-artwork-gallery .cb-hero .cb-product{grid-column:1;grid-row:1;min-height:0}
+ .product-artwork-gallery .cb-product img{height:310px}
+ .product-artwork-gallery .cb-panel{padding:13% 6% 8%}
+ .product-artwork-gallery .cb-benefits{grid-template-columns:repeat(2,1fr)}
+ .product-artwork-gallery .cb-proof-grid{grid-template-columns:repeat(2,1fr)}
+ .product-artwork-gallery .cb-scenes-grid{grid-template-columns:repeat(3,1fr)}
+ .product-artwork-gallery .cb-ingredients{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+ .product-artwork-gallery .creative-board{aspect-ratio:1/1.12}
+ .product-artwork-gallery .cb-hero{grid-template-columns:1fr;padding:15% 7% 12%}
+ .product-artwork-gallery .cb-hero .cb-copy{grid-column:1;grid-row:2}
+ .product-artwork-gallery .cb-hero .cb-product{grid-column:1;grid-row:1}
+ .product-artwork-gallery .cb-product img{height:250px}
+ .product-artwork-gallery .cb-heading h2{font-size:31px}
+ .product-artwork-gallery .cb-heading p{font-size:13px}
+ .product-artwork-gallery .cb-card{min-height:220px;padding:14px 9px}
+ .product-artwork-gallery .cb-illustration{height:95px}
+ .product-artwork-gallery .cb-card h3{font-size:15px}
+ .product-artwork-gallery .cb-card p{font-size:10px}
+ .product-artwork-gallery .cb-proof-card{min-height:200px}
+ .product-artwork-gallery .cb-proof-card .cb-illustration{height:80px}
+ .product-artwork-gallery .cb-proof-card strong{font-size:34px}
+ .product-artwork-gallery .cb-scene-grid{grid-template-columns:1fr}
+ .product-artwork-gallery .cb-scene-card{min-height:160px;display:grid;grid-template-columns:90px 1fr;align-content:center;padding:14px}
+ .product-artwork-gallery .cb-scene-card .cb-illustration{grid-row:1/4;height:90px;margin:0}
+ .product-artwork-gallery .cb-scene-card b,.product-artwork-gallery .cb-scene-card p{grid-column:2}
+ .product-artwork-gallery .cb-ingredients{grid-template-columns:1fr}
+}
+
+.product-artwork-gallery .cb-copy{text-align:center;max-width:none}
+.product-artwork-gallery .cb-copy h1{max-width:14ch;margin-left:auto;margin-right:auto}
+.product-artwork-gallery .cb-copy>p{margin-left:auto;margin-right:auto}
+.product-artwork-gallery .cb-kicker{justify-content:center}
+.product-artwork-gallery .cb-spec{border-color:#d9b968;box-shadow:0 4px 15px rgba(211,177,101,.12)}
+.product-artwork-gallery .cb-ingredient-box h3,.product-artwork-gallery .cb-routine-box h3{display:inline-flex;align-items:center;margin:-3px 0 14px;padding:10px 18px;border:0;border-bottom:3px solid #e4c174;border-radius:10px 10px 0 0;background:linear-gradient(105deg,#164d88,#2d79b6);color:white;font-size:18px;box-shadow:0 8px 18px rgba(29,75,125,.16)}
+@media(max-width:850px){.product-artwork-gallery .cb-scene-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.product-artwork-gallery .cb-scene-grid{grid-template-columns:1fr}}
+.poster-detail-link{display:flex;justify-content:center;padding:0 0 28px}.poster-detail-link a{display:inline-flex;align-items:center;gap:12px;padding:13px 28px;border:1px solid #d3b46e;border-radius:999px;background:linear-gradient(135deg,#fff,#eef5fc);color:#18385e;text-decoration:none;font:500 15px/1.4 "Noto Serif SC","Songti SC",serif;box-shadow:0 9px 24px rgba(35,74,121,.1)}.poster-detail-link a:hover{background:#fff;box-shadow:0 13px 29px rgba(35,74,121,.16)}

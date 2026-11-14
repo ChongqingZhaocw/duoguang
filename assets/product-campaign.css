@@ -1,0 +1,54 @@
+
+/* 2026-11-13 · 9款单品统一采用祛痘精华液广告页的版面顺序 */
+.campaign-product-page .campaign{max-width:none;padding-top:clamp(34px,5vw,66px);padding-bottom:56px;background:radial-gradient(ellipse at 77% 15%,color-mix(in srgb,var(--accent-soft) 70%,transparent),transparent 38%),linear-gradient(135deg,#fbfdff,#eaf2f8 58%,#f7fafc)}
+.campaign-product-page .hero{max-width:1220px;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(28px,6vw,84px);align-items:center}
+.campaign-product-page .copy{order:2;text-align:left}
+.campaign-product-page .eyebrow{color:var(--accent)}
+.campaign-product-page .eyebrow:before{background:var(--accent)}
+.campaign-product-page h1{max-width:13ch;margin:20px 0 15px;font:500 clamp(39px,5vw,68px)/1.22 "Noto Serif SC","Songti SC",serif;letter-spacing:-.04em;color:#142f55}
+.campaign-product-page .lead{max-width:34em;margin:0;color:#405f7d;font:400 clamp(16px,1.55vw,20px)/1.85 "Noto Serif SC","Songti SC",serif}
+.campaign-product-page .spec{margin-top:20px;padding:10px 16px;border-color:#d6bb7d;background:rgba(255,255,255,.72);font:500 14px/1.5 "Noto Serif SC","Songti SC",serif;letter-spacing:.02em}
+.campaign-product-page .metric{margin-top:27px;padding:0 0 0 17px;border-left:2px solid #d8b76f}
+.campaign-product-page .metric strong{font-size:clamp(34px,4.2vw,54px);color:#17385e}
+.campaign-product-page .metric span{color:#4b6785;line-height:1.65}
+.campaign-product-page .metric--facts{align-items:center}
+.campaign-product-page .metric--facts strong{max-width:7ch;font:500 21px/1.3 "Noto Serif SC","Songti SC",serif;letter-spacing:0}
+.campaign-product-page .pending-price{display:inline-flex;margin-top:18px;padding:7px 14px;border:1px solid rgba(184,155,106,.62);border-radius:999px;color:#6f685b;background:rgba(255,255,255,.62);font:400 12px/1.4 "Noto Serif SC","Songti SC",serif}
+.campaign-product-page .visual--product,.campaign-product-page .visual--placeholder{order:1;min-height:560px;display:grid;place-items:center;overflow:hidden;border-radius:20px;background:linear-gradient(145deg,rgba(255,255,255,.8),rgba(222,238,250,.52));box-shadow:inset 0 0 0 1px rgba(255,255,255,.95),0 18px 48px rgba(34,70,108,.08)}
+.campaign-product-page .visual--product:before{width:min(90%,540px);background:radial-gradient(circle at 50% 44%,rgba(255,255,255,.98),rgba(223,239,251,.62) 61%,transparent 73%)}
+.campaign-product-page .visual--product:after{bottom:9%;width:61%;height:7%;filter:blur(18px);background:rgba(48,91,135,.2)}
+.campaign-product-page .product-shot{position:relative;z-index:1;width:min(75%,440px);height:500px;object-fit:contain;mix-blend-mode:multiply;filter:drop-shadow(12px 22px 20px rgba(28,62,94,.22))}
+.product-placeholder{width:min(76%,350px);min-height:430px;display:flex;flex-direction:column;justify-content:center;align-items:center;border:1px solid rgba(255,255,255,.98);border-radius:48% 48% 28px 28px;background:linear-gradient(145deg,rgba(255,255,255,.88),rgba(213,231,246,.62));box-shadow:0 18px 44px rgba(38,74,112,.12);text-align:center;color:#315473}
+.product-placeholder b{font:italic 600 28px Georgia,serif}.product-placeholder span{margin:16px 0;font:500 20px/1.6 "Noto Serif SC","Songti SC",serif}.product-placeholder small{color:#71889d;font-size:12px}
+.campaign-product-page .campaign-details{max-width:1220px;margin:58px auto 0;padding-top:32px;border-top:1px solid rgba(142,180,199,.42)}
+.campaign-product-page .campaign-details-head{align-items:center;margin-bottom:24px}
+.campaign-product-page .campaign-details h2{color:#17375e;font:500 clamp(26px,3vw,40px)/1.3 "Noto Serif SC","Songti SC",serif}
+.campaign-product-page .campaign-details-head p{color:#6a8195;font:400 13px/1.6 "Noto Serif SC","Songti SC",serif}
+.campaign-product-page .campaign-point-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.campaign-product-page .campaign-point{position:relative;isolation:isolate;min-height:290px;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:54px 23px 32px;border:1px solid rgba(255,255,255,.96);border-radius:0;clip-path:polygon(50% 0%,61% 11%,75% 23%,87% 38%,95% 52%,97% 65%,92% 78%,81% 89%,66% 97%,50% 100%,34% 97%,19% 89%,8% 78%,3% 65%,5% 52%,13% 38%,25% 23%,39% 11%);background:linear-gradient(155deg,rgba(255,255,255,.96),rgba(219,237,250,.78));box-shadow:none;filter:drop-shadow(0 12px 18px rgba(40,78,119,.12));text-align:center}
+.campaign-product-page .campaign-point:before{content:"";position:absolute;z-index:-1;top:12%;left:20%;width:60%;height:25%;border-radius:50%;background:radial-gradient(ellipse,rgba(255,255,255,.82),transparent 72%);pointer-events:none}
+.campaign-product-page .campaign-point b{display:block;margin-bottom:10px;color:#17385e;font:500 clamp(16px,1.4vw,20px)/1.45 "Noto Serif SC","Songti SC",serif;letter-spacing:.04em}
+.campaign-product-page .campaign-point p{margin:0;color:#496681;font:400 clamp(12px,1vw,14px)/1.7 "Noto Serif SC","Songti SC",serif}
+.campaign-study .study-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.campaign-study .study-card{min-height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;border:1px solid rgba(255,255,255,.97);border-radius:20px;background:linear-gradient(155deg,rgba(255,255,255,.94),rgba(219,237,250,.76));box-shadow:0 12px 28px rgba(40,78,119,.08);text-align:center}
+.campaign-study .study-card b{color:#43627f;font:500 13px/1.4 "Noto Serif SC","Songti SC",serif}
+.campaign-study .study-card strong{margin:12px 0 6px;color:#15385f;font:italic 500 clamp(32px,4vw,52px)/1 Georgia,serif}
+.campaign-study .study-card span{color:#637e98;font:400 12px/1.5 "Noto Serif SC","Songti SC",serif}
+.campaign-study .study-card--main{border-color:rgba(214,183,111,.8);background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(238,243,248,.82))}
+.campaign-product-page .study-note{max-width:1000px;margin:18px auto 0;color:#718498;text-align:center;font:400 11px/1.8 "Noto Serif SC","Songti SC",serif}
+.campaign-product-page .formula-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.campaign-product-page .formula-panel{min-height:310px;padding:26px 28px;border:1px solid rgba(255,255,255,.97);border-radius:20px;background:linear-gradient(145deg,rgba(255,255,255,.92),rgba(220,236,249,.74));box-shadow:0 12px 30px rgba(40,78,119,.08)}
+.campaign-product-page .formula-panel h3{display:inline-flex;margin:0 0 16px;padding:9px 17px;border-radius:12px 12px 0 0;border-bottom:3px solid #dfbd78;background:linear-gradient(105deg,#204f7a,#3a7fa8);color:white;font:500 17px/1.4 "Noto Serif SC","Songti SC",serif}
+.ingredient-list,.routine-list{list-style:none;margin:0;padding:0}
+.ingredient-list li{display:flex;align-items:center;gap:12px;min-height:64px;border-bottom:1px solid rgba(142,172,207,.32);color:#244767;font:500 15px/1.6 "Noto Serif SC","Songti SC",serif}
+.ingredient-bead{width:34px;height:34px;flex:0 0 34px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.98);border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#d5e8f7 64%,#aac9e3);box-shadow:0 5px 12px rgba(50,91,132,.1);color:#6385a4;font:500 11px Georgia,serif}
+.routine-list{display:grid;gap:9px}
+.routine-list li{display:flex;align-items:center;gap:12px;padding:11px 14px;border:1px solid rgba(214,183,111,.55);border-radius:999px;background:rgba(255,255,255,.68);color:#254665}
+.routine-list li span{color:#b1945e;font:italic 500 13px Georgia,serif}
+.routine-list li b{font:500 13px/1.5 "Noto Serif SC","Songti SC",serif}
+.routine-note,.package-note{margin:14px 0 0;color:#72879a;font:400 11px/1.7 "Noto Serif SC","Songti SC",serif}
+.campaign-product-page .footnote{max-width:1220px;margin:24px auto 0;color:#73889b;font-size:11px;line-height:1.8}
+.campaign-product-page .more{max-width:1220px;margin:18px auto 0}
+@media(max-width:900px){.campaign-product-page .hero{grid-template-columns:1fr;gap:18px}.campaign-product-page .copy{order:0;text-align:center}.campaign-product-page .visual--product,.campaign-product-page .visual--placeholder{order:1;min-height:420px}.campaign-product-page .campaign-point-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.campaign-product-page .campaign-point{min-height:270px;padding:50px 22px 30px}.campaign-product-page .formula-grid{gap:10px}.campaign-product-page .formula-panel{padding:20px 18px}}
+@media(max-width:560px){.campaign-product-page .campaign{padding:30px 18px 42px}.campaign-product-page .hero{gap:8px}.campaign-product-page h1{font-size:clamp(36px,10.5vw,52px);margin:17px auto 12px}.campaign-product-page .lead{font-size:15px}.campaign-product-page .spec{font-size:12px}.campaign-product-page .visual--product,.campaign-product-page .visual--placeholder{min-height:345px}.campaign-product-page .product-shot{width:min(78%,290px);height:330px}.campaign-product-page .campaign-details{margin-top:35px;padding-top:22px}.campaign-product-page .campaign-details-head{display:block;margin-bottom:16px;text-align:center}.campaign-product-page .campaign-details-head p{margin:7px 0 0}.campaign-product-page .campaign-point-grid{grid-template-columns:1fr;gap:4px}.campaign-product-page .campaign-point{min-height:260px;padding:49px 25px 30px}.campaign-product-page .campaign-point p{max-width:19em;font-size:13px}.campaign-study .study-grid{grid-template-columns:1fr}.campaign-study .study-card{min-height:155px}.campaign-product-page .formula-grid{grid-template-columns:1fr}.campaign-product-page .formula-panel{min-height:0}.campaign-product-page .metric{justify-content:center}.campaign-product-page .pending-price{margin-inline:auto}}
+@media(prefers-reduced-motion:reduce){.campaign-product-page *, .campaign-product-page *::before, .campaign-product-page *::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
