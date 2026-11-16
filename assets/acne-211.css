@@ -1,0 +1,12 @@
+/* 211 批注修订：标题左置，广告画面连续满铺。 */
+.acne-211-page .campaign:has(.visual--acne-poster){padding:clamp(24px,4vw,48px) 0 36px}
+.acne-211-page .campaign:has(.visual--acne-poster) .hero{max-width:none;width:100%}
+.acne-211-page .campaign:has(.visual--acne-poster) .copy{width:min(1220px,100%);margin:0 auto 14px;padding:0 max(6vw,24px);text-align:left}
+.acne-211-page .campaign:has(.visual--acne-poster) h1{max-width:none;margin:0;color:#17385e;font:400 clamp(24px,2.7vw,34px)/1.45 "Noto Serif SC","Songti SC",serif;letter-spacing:.015em}
+.acne-211-page .campaign:has(.visual--acne-poster) h1:after{content:"";display:block;width:42px;height:2px;margin-top:10px;background:#d6b76f}
+.acne-211-page .campaign:has(.visual--acne-poster) .visual--acne-poster{width:100%;max-width:none;margin:0;min-height:0;border-radius:0}
+.acne-211-page .campaign:has(.visual--acne-poster) .acne-poster{width:100%;max-width:none;height:auto;border-radius:0;box-shadow:none}
+.acne-211-page .campaign:has(.visual--acne-poster) .promo-long-section{max-width:none;margin:0;padding:0;border:0}
+.acne-211-page .campaign:has(.visual--acne-poster) .promo-long-image{width:100%;border-radius:0;box-shadow:none}
+.acne-211-page .campaign:has(.visual--acne-poster) .footnote,.acne-211-page .campaign:has(.visual--acne-poster) .more{width:min(1220px,100%);padding-inline:max(6vw,24px)}
+@media(max-width:800px){.acne-211-page .campaign:has(.visual--acne-poster){padding-top:24px}.acne-211-page .campaign:has(.visual--acne-poster) .copy{margin-bottom:10px;padding-inline:22px}.acne-211-page .campaign:has(.visual--acne-poster) h1{font-size:clamp(22px,6.2vw,29px);line-height:1.45}.acne-211-page .campaign:has(.visual--acne-poster) h1:after{width:34px;margin-top:8px}}
